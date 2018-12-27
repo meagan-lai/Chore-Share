@@ -17,6 +17,8 @@ export default class App extends Component {
   }
 
   roomateAdd(name) {
+    console.log("hello world" + "git test");
+
     var allRoomates = this.state.allRoomates;
     var newAllRoomates = allRoomates.concat(name);
     if (allRoomates.includes(name)) {
