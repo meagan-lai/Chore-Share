@@ -24,11 +24,11 @@ export default class App extends Component {
     if (allRoomates.includes(name)) {
       var index = allRoomates.indexOf(name);
       allRoomates.splice(index, 1);
+      console.log(allRoomates);
     } else {
       this.setState({ allRoomates: newAllRoomates });
       console.log(allRoomates);
     }
-    console.log(allRoomates);
   }
   render() {
     console.log(this.state.allRoomates);
