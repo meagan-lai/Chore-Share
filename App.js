@@ -45,6 +45,11 @@ export default class App extends Component {
             <Text>Samantha</Text>
           </View>
         </TouchableHighlight>
+        <TouchableHighlight onPress={() => this.roomateAdd("Jessica")}>
+          <View>
+            <Text>Jessica</Text>
+          </View>
+        </TouchableHighlight>
       </View>
     );
   }
