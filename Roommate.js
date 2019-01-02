@@ -14,6 +14,7 @@ export default class Roommate extends Component {
   }
   roomateAdd(name) {
     console.log("hello world" + "git test");
+    console.log("Meagan");
   }
   render() {
     return (
