@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Roommate from "./Roommate";
 import {
   Platform,
   StyleSheet,
@@ -10,7 +11,7 @@ import {
 export default class App extends Component {
   constructor(props) {
     super(props);
-
+    this.roomateAdd = this.roomateAdd.bind(this);
     this.state = {
       allRoomates: ["Meagan"]
     };
@@ -50,6 +51,7 @@ export default class App extends Component {
             <Text>Jessica</Text>
           </View>
         </TouchableHighlight>
+        <Roommate name="Emily" func={this.roomateAdd} />
       </View>
     );
   }
