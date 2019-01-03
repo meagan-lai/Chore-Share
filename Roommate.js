@@ -12,14 +12,11 @@ export default class Roommate extends Component {
     super(props);
     this.state = {};
   }
-  roomateAdd(name) {
-    console.log("hello world" + "git test");
-    console.log("Meagan");
-  }
+
   render() {
     return (
       <View>
-        <TouchableHighlight onPress={this.props.func("hello")}>
+        <TouchableHighlight onPress={() => this.props.func("hello")}>
           <View>
             <Text>{this.props.name}</Text>
           </View>

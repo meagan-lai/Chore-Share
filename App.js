@@ -13,7 +13,7 @@ export default class App extends Component {
     super(props);
     this.roomateAdd = this.roomateAdd.bind(this);
     this.state = {
-      allRoomates: ["Meagan"]
+      allRoomates: []
     };
   }
 
@@ -36,21 +36,8 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <TouchableHighlight onPress={() => this.roomateAdd("Meagan")}>
-          <View>
-            <Text>Meagan</Text>
-          </View>
-        </TouchableHighlight>
-        <TouchableHighlight onPress={() => this.roomateAdd("Samantha")}>
-          <View>
-            <Text>Samantha</Text>
-          </View>
-        </TouchableHighlight>
-        <TouchableHighlight onPress={() => this.roomateAdd("Jessica")}>
-          <View>
-            <Text>Jessica</Text>
-          </View>
-        </TouchableHighlight>
+        <Roommate name="Meagan" func={this.roomateAdd} />
+        <Roommate name="Vi" func={this.roomateAdd} />
         <Roommate name="Emily" func={this.roomateAdd} />
       </View>
     );
