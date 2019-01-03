@@ -36,9 +36,9 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <Roommate name="Meagan" func={this.roomateAdd} />
-        <Roommate name="Vi" func={this.roomateAdd} />
-        <Roommate name="Emily" func={this.roomateAdd} />
+        <Roommate name="Meagan" roomateAdd={this.roomateAdd} />
+        <Roommate name="Vi" roomateAdd={this.roomateAdd} />
+        <Roommate name="Emily" roomateAdd={this.roomateAdd} />
       </View>
     );
   }

@@ -16,7 +16,9 @@ export default class Roommate extends Component {
   render() {
     return (
       <View>
-        <TouchableHighlight onPress={() => this.props.func("hello")}>
+        <TouchableHighlight
+          onPress={() => this.props.roomateAdd(this.props.name)}
+        >
           <View>
             <Text>{this.props.name}</Text>
           </View>
