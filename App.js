@@ -11,34 +11,34 @@ import {
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.roomateAdd = this.roomateAdd.bind(this);
+    this.roommateAdd = this.roommateAdd.bind(this);
     this.state = {
-      allRoomates: []
+      allRoommates: []
     };
   }
 
-  roomateAdd(name) {
+  roommateAdd(name) {
     console.log("hello world" + "git test");
 
-    var allRoomates = this.state.allRoomates;
-    var newAllRoomates = allRoomates.concat(name);
-    if (allRoomates.includes(name)) {
-      var index = allRoomates.indexOf(name);
-      allRoomates.splice(index, 1);
-      console.log(allRoomates);
+    var allRoommates = this.state.allRoommates;
+    var newAllRoommates = allRoommates.concat(name);
+    if (allRoommates.includes(name)) {
+      var index = allRoommates.indexOf(name);
+      allRoommates.splice(index, 1);
+      console.log(allRoommates);
     } else {
-      this.setState({ allRoomates: newAllRoomates });
-      console.log(allRoomates);
+      this.setState({ allRoommates: newAllRoommates });
+      console.log(allRoommates);
     }
   }
   render() {
-    console.log(this.state.allRoomates);
+    console.log(this.state.allRoommates);
 
     return (
       <View style={styles.container}>
-        <Roommate name="Meagan" roomateAdd={this.roomateAdd} />
-        <Roommate name="Vi" roomateAdd={this.roomateAdd} />
-        <Roommate name="Emily" roomateAdd={this.roomateAdd} />
+        <Roommate name="Meagan" roommateAdd={this.roommateAdd} />
+        <Roommate name="Vi" roommateAdd={this.roommateAdd} />
+        <Roommate name="Emily" roommateAdd={this.roommateAdd} />
       </View>
     );
   }
@@ -47,9 +47,10 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: "column",
+    flexWrap: "wrap",
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    alignItems: "center"
   },
   welcome: {
     fontSize: 20,
