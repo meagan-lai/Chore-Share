@@ -9,11 +9,11 @@ import {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "blue",
-    margin: 10,
+    backgroundColor: "grey",
+    margin: 5,
     paddingHorizontal: 5,
-    paddingVertical: 15,
-    borderRadius: 60,
+    paddingVertical: 10,
+    borderRadius: 40,
     width: "40%",
     height: "8%"
   },
