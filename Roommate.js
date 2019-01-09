@@ -9,8 +9,8 @@ import {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "grey",
-    margin: 5,
+    backgroundColor: "red",
+    margin: 20,
     paddingHorizontal: 5,
     paddingVertical: 10,
     borderRadius: 30,
