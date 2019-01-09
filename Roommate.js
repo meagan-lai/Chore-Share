@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: 25
+    fontSize: 20
   }
 });
 export default class Roommate extends Component {
