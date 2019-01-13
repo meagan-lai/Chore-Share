@@ -8,6 +8,8 @@ import {
   TouchableHighlight
 } from "react-native";
 
+const roommateNames = ["Meagan", "Vi", "Emily", "Christina"];
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -36,9 +38,9 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <Roommate name="Meagan" roommateAdd={this.roommateAdd} />
-        <Roommate name="Vi" roommateAdd={this.roommateAdd} />
-        <Roommate name="Emily" roommateAdd={this.roommateAdd} />
+        {roommateNames.map((name, i) => {
+          return <Roommate name={name} roommateAdd={this.roommateAdd} />;
+        })}
       </View>
     );
   }
