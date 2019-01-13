@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Roommate from "./Roommate";
 import {
+  ScrollView,
   Platform,
   StyleSheet,
   Text,
@@ -8,14 +9,13 @@ import {
   TouchableHighlight
 } from "react-native";
 
-const roommateNames = ["Meagan", "Vi", "Emily", "Christina"];
-
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.roommateAdd = this.roommateAdd.bind(this);
     this.state = {
-      allRoommates: []
+      allRoommates: [],
+      roommateNames: ["Meagan", "Vi", "Emily", "Christina"]
     };
   }
 
@@ -33,15 +33,29 @@ export default class App extends Component {
       console.log(allRoommates);
     }
   }
+
+  newRoommate(name) {
+    let r = this.state.roommateNames;
+    r.push(name);
+    this.setState({ roommateNames: r });
+  }
   render() {
     console.log(this.state.allRoommates);
 
     return (
-      <View style={styles.container}>
-        {roommateNames.map((name, i) => {
-          return <Roommate name={name} roommateAdd={this.roommateAdd} />;
+      <ScrollView contentContainerStyle={styles.container}>
+        {this.state.roommateNames.map((name, i) => {
+          return (
+            <Roommate key={i} name={name} roommateAdd={this.roommateAdd} />
+          );
         })}
-      </View>
+        <TouchableHighlight
+          style={styles.button}
+          onPress={() => this.newRoommate("test")}
+        >
+          <Text style={styles.text}>+</Text>
+        </TouchableHighlight>
+      </ScrollView>
     );
   }
 }
@@ -63,5 +77,23 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#333333",
     marginBottom: 5
+  },
+  button: {
+    backgroundColor: "white",
+    borderColor: "#5ac8fa",
+    borderWidth: 3,
+    margin: 20,
+    width: 5,
+    paddingVertical: 10,
+    borderRadius: 30,
+    width: "40%",
+    height: "8%",
+    opacity: 0.8
+  },
+  text: {
+    textAlign: "center",
+    color: "#5ac8fa",
+    fontSize: 20,
+    fontWeight: "bold"
   }
 });
