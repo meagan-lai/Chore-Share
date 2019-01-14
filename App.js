@@ -8,6 +8,7 @@ import {
   View,
   TouchableHighlight
 } from "react-native";
+<style>@import url('https://fonts.googleapis.com/css?family=Vibur');</style>;
 
 export default class App extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class App extends Component {
 
     return (
       <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.header}>Roommates</Text>
         {this.state.roommateNames.map((name, i) => {
           return (
             <Roommate key={i} name={name} roommateAdd={this.roommateAdd} />
@@ -66,7 +68,8 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     flexWrap: "wrap",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    backgroundColor: "#7FDCC2"
   },
   welcome: {
     fontSize: 20,
@@ -95,5 +98,12 @@ const styles = StyleSheet.create({
     color: "#5ac8fa",
     fontSize: 20,
     fontWeight: "bold"
+  },
+
+  header: {
+    fontFamily: "Vibur",
+    fontWeight: "bold",
+    fontSize: 50,
+    color: "white"
   }
 });
