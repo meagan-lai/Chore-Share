@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   header: {
     fontFamily: "Vibur",
     fontWeight: "bold",
-    fontSize: 50,
+    fontSize: 40,
     color: "white"
   }
 });
