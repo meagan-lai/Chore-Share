@@ -87,11 +87,11 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    color: "#575757",
+    color: "orange",
     fontFamily: "Helvetica",
-    fontSize: 25,
+    fontSize: 60,
     fontWeight: "bold",
-    paddingVertical: 40
+    paddingVertical: 20
   },
 
   header: {
