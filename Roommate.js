@@ -10,39 +10,40 @@ import {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "white",
-    borderColor: "#5ac8fa",
-    borderWidth: 3,
-    margin: 20,
-    width: 5,
+    borderColor: "#7FDCC2",
+    borderWidth: 5,
+    margin: 10,
     paddingVertical: 10,
-    borderRadius: 30,
+    borderRadius: 10,
     width: "40%",
-    height: "8%",
-    opacity: 0.8
+    height: "17%"
   },
   text: {
     textAlign: "center",
-    color: "#5ac8fa",
-    fontSize: 20,
-    fontWeight: "bold"
+    color: "#575757",
+    fontFamily: "Helvetica",
+    fontSize: 25,
+    fontWeight: "bold",
+    paddingVertical: 40
   },
   active: {
-    borderColor: "#5ac8fa",
-    borderWidth: 3,
-    backgroundColor: "black",
-    margin: 20,
+    borderColor: "#54B888",
+    borderWidth: 5,
+    backgroundColor: "white",
+    margin: 10,
     paddingHorizontal: 5,
     paddingVertical: 10,
-    borderRadius: 30,
+    borderRadius: 10,
     width: "40%",
-    height: "8%",
-    opacity: 0.8
+    height: "17%",
+    paddingVertical: 50
   },
 
   textActive: {
-    color: "white",
     textAlign: "center",
-    fontSize: 20,
+    color: "#575757",
+    fontFamily: "Helvetica",
+    fontSize: 25,
     fontWeight: "bold"
   }
 });

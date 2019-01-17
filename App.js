@@ -46,17 +46,19 @@ export default class App extends Component {
     return (
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.header}>Roommates</Text>
+        <TouchableHighlight
+          style={styles.button}
+          onPress={() => this.newRoommate("test")}
+        >
+          <View>
+            <Text style={styles.text}>+</Text>
+          </View>
+        </TouchableHighlight>
         {this.state.roommateNames.map((name, i) => {
           return (
             <Roommate key={i} name={name} roommateAdd={this.roommateAdd} />
           );
         })}
-        <TouchableHighlight
-          style={styles.button}
-          onPress={() => this.newRoommate("test")}
-        >
-          <Text style={styles.text}>+</Text>
-        </TouchableHighlight>
       </ScrollView>
     );
   }
@@ -65,45 +67,43 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column",
+    flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#7FDCC2"
+    backgroundColor: "#7FDCC2",
+    justifyContent: "space-evenly",
+    alignItems: "flex-start",
+    borderWidth: 1
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
-  },
+
   button: {
     backgroundColor: "white",
-    borderColor: "#5ac8fa",
-    borderWidth: 3,
-    margin: 20,
-    width: 5,
+    borderColor: "#7FDCC2",
+    borderWidth: 5,
+    margin: 10,
     paddingVertical: 10,
-    borderRadius: 30,
+    borderRadius: 10,
     width: "40%",
-    height: "8%",
-    opacity: 0.8
+    height: "17%"
   },
   text: {
     textAlign: "center",
-    color: "#5ac8fa",
-    fontSize: 20,
-    fontWeight: "bold"
+    color: "#575757",
+    fontFamily: "Helvetica",
+    fontSize: 25,
+    fontWeight: "bold",
+    paddingVertical: 40
   },
 
   header: {
+    textAlign: "left",
     fontFamily: "Vibur",
     fontWeight: "bold",
-    fontSize: 40,
-    color: "white"
+    fontSize: 60,
+    color: "white",
+    width: "100%",
+    paddingLeft: 40,
+    paddingTop: 100
   }
 });
