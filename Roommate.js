@@ -10,8 +10,6 @@ import {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "white",
-    borderColor: "#7FDCC2",
-    borderWidth: 5,
     margin: 10,
     paddingVertical: 10,
     borderRadius: 10,
@@ -27,8 +25,6 @@ const styles = StyleSheet.create({
     paddingVertical: 40
   },
   active: {
-    borderColor: "#54B888",
-    borderWidth: 5,
     backgroundColor: "white",
     margin: 10,
     paddingHorizontal: 5,
@@ -36,7 +32,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "40%",
     height: "17%",
-    paddingVertical: 50
+    paddingVertical: 50,
+    shadowOffset: { width: 11, height: 11 },
+    shadowColor: "#23513b",
+    shadowOpacity: 1.0
   },
 
   textActive: {

@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#7FDCC2",
+    backgroundColor: "#6eeac3",
     justifyContent: "space-evenly",
     alignItems: "flex-start",
     borderWidth: 1
@@ -79,8 +79,6 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: "white",
-    borderColor: "#7FDCC2",
-    borderWidth: 5,
     margin: 10,
     paddingVertical: 10,
     borderRadius: 10,
@@ -100,10 +98,11 @@ const styles = StyleSheet.create({
     textAlign: "left",
     fontFamily: "Vibur",
     fontWeight: "bold",
-    fontSize: 60,
+    fontSize: 65,
     color: "white",
     width: "100%",
     paddingLeft: 40,
-    paddingTop: 100
+    paddingTop: 100,
+    paddingBottom: 20
   }
 });
