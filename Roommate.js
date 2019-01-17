@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#575757",
     fontFamily: "Helvetica",
-    fontSize: 25,
+    fontSize: 27,
     fontWeight: "bold",
     paddingVertical: 40
   },
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "#575757",
     fontFamily: "Helvetica",
-    fontSize: 25,
+    fontSize: 27,
     fontWeight: "bold"
   }
 });

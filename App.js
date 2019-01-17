@@ -89,9 +89,9 @@ const styles = StyleSheet.create({
     textAlign: "center",
     color: "orange",
     fontFamily: "Helvetica",
-    fontSize: 60,
+    fontSize: 80,
     fontWeight: "bold",
-    paddingVertical: 20
+    paddingVertical: 10
   },
 
   header: {
