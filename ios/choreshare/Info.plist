@@ -55,8 +55,9 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Vibur-Regular.ttf</string>
 		<string>Vibur.ttf</string>
+		<string>Satisfy.tff</string>
+		<string>Satisfy.ttf</string>
 	</array>
 </dict>
 </plist>

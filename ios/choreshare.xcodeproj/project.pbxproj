@@ -39,6 +39,9 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		1DC47A086F4344928F080EEB /* Vibur-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368095FC06F4434ABE471F30 /* Vibur-Regular.ttf */; };
 		B9CA68C3A6FD4718A98FF766 /* Vibur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38D270D5470946EAA63E3279 /* Vibur.ttf */; };
+		D16A0A5D65AC4AFA9811BDDB /* Satisfy Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A012C83F908C4D1B8D23455A /* Satisfy Regular.ttf */; };
+		AA8154A33ED94F91A0276670 /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BA89395E14646C0849E9A7A /* Satisfy-Regular.ttf */; };
+		B3126CE8DEC94719B661A7DE /* Satisfy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2699371D8294750AF1BF862 /* Satisfy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +349,9 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		368095FC06F4434ABE471F30 /* Vibur-Regular.ttf */ = {isa = PBXFileReference; name = "Vibur-Regular.ttf"; path = "../assets/fonts/Vibur-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		38D270D5470946EAA63E3279 /* Vibur.ttf */ = {isa = PBXFileReference; name = "Vibur.ttf"; path = "../assets/fonts/Vibur.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A012C83F908C4D1B8D23455A /* Satisfy Regular.ttf */ = {isa = PBXFileReference; name = "Satisfy Regular.ttf"; path = "../assets/fonts/Satisfy Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2BA89395E14646C0849E9A7A /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; name = "Satisfy-Regular.ttf"; path = "../assets/fonts/Satisfy-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2699371D8294750AF1BF862 /* Satisfy.ttf */ = {isa = PBXFileReference; name = "Satisfy.ttf"; path = "../assets/fonts/Satisfy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -612,6 +618,9 @@
 			children = (
 				368095FC06F4434ABE471F30 /* Vibur-Regular.ttf */,
 				38D270D5470946EAA63E3279 /* Vibur.ttf */,
+				A012C83F908C4D1B8D23455A /* Satisfy Regular.ttf */,
+				2BA89395E14646C0849E9A7A /* Satisfy-Regular.ttf */,
+				D2699371D8294750AF1BF862 /* Satisfy.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1065,6 +1074,9 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				1DC47A086F4344928F080EEB /* Vibur-Regular.ttf in Resources */,
 				B9CA68C3A6FD4718A98FF766 /* Vibur.ttf in Resources */,
+				D16A0A5D65AC4AFA9811BDDB /* Satisfy Regular.ttf in Resources */,
+				AA8154A33ED94F91A0276670 /* Satisfy-Regular.ttf in Resources */,
+				B3126CE8DEC94719B661A7DE /* Satisfy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
