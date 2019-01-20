@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Roommate from "./Roommate";
+import Roommate from "../../../Roommate";
 import {
   ScrollView,
   Platform,
@@ -10,7 +10,7 @@ import {
 } from "react-native";
 <style>@import url('https://fonts.googleapis.com/css?family=Vibur');</style>;
 
-export default class App extends Component {
+export default class ChooseRoommate extends Component {
   constructor(props) {
     super(props);
     this.roommateAdd = this.roommateAdd.bind(this);
@@ -21,8 +21,6 @@ export default class App extends Component {
   }
 
   roommateAdd(name) {
-    console.log("hello world" + "git test");
-
     var allRoommates = this.state.allRoommates;
     var newAllRoommates = allRoommates.concat(name);
     if (allRoommates.includes(name)) {
@@ -44,23 +42,25 @@ export default class App extends Component {
     console.log(this.state.allRoommates);
 
     return (
-      <ScrollView contentContainerStyle={styles.container}>
-        <View style={styles.header}>
-          <Text style={styles.headerText}>Roommates</Text>
+      <ScrollView>
+        <View>
+          <Text style={styles.header}>Roommates</Text>
         </View>
-        <TouchableHighlight
-          style={styles.button}
-          onPress={() => this.newRoommate("test")}
-        >
-          <View>
-            <Text style={styles.text}>+</Text>
-          </View>
-        </TouchableHighlight>
-        {this.state.roommateNames.map((name, i) => {
-          return (
-            <Roommate key={i} name={name} roommateAdd={this.roommateAdd} />
-          );
-        })}
+        <View style={styles.container}>
+          <TouchableHighlight
+            style={styles.button}
+            onPress={() => this.newRoommate("test")}
+          >
+            <View>
+              <Text style={styles.text}>+</Text>
+            </View>
+          </TouchableHighlight>
+          {this.state.roommateNames.map((name, i) => {
+            return (
+              <Roommate key={i} name={name} roommateAdd={this.roommateAdd} />
+            );
+          })}
+        </View>
       </ScrollView>
     );
   }
@@ -70,37 +70,26 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    flexWrap: "wrap",
-    backgroundColor: "white",
-    alignItems: "flex-start",
-    justifyContent: "space-evenly"
+    backgroundColor: "#6eeac3"
   },
-
   button: {
-    backgroundColor: "grey",
-    width: "20%",
-    height: "20%",
-    borderRadius: 100,
-    margin: 10
+    backgroundColor: "white",
+    width: "40%",
+    height: "17%"
   },
   text: {
-    color: "orange",
     fontFamily: "Helvetica",
-    fontSize: 50,
+    fontSize: 80,
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
+    color: "orange"
   },
 
   header: {
-    backgroundColor: "#6eeac3",
-    width: "100%",
-    paddingVertical: "20%"
-  },
-  headerText: {
     fontFamily: "Vibur",
-    fontSize: 65,
     fontWeight: "bold",
-    textAlign: "center",
-    color: "white"
+    fontSize: 5,
+    color: "white",
+    width: "100%"
   }
 });
