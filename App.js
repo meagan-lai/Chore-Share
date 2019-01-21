@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import Roommate from "./Roommate";
 import {
   ScrollView,
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    backgroundColor: "#6eeac3",
+    backgroundColor: "#94D5C1",
     width: "100%",
     paddingVertical: "20%"
   },
